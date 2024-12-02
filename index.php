@@ -110,8 +110,8 @@
                  <div class="ekip-ikon">
                     <a href="#"><i class="fab fa-facebook social"></i></a>
                     <a href="#"><i class="fab fa-twitter social"></i></a>
-                    <a href="https://www.instagram.com/hasan.acn/" target="_blank"><i class="fab fa-instagram social"></i></a>
-                    <a href=""><i class="fab fa-linkedin social"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram social"></i></a>
+                    <a href="#"><i class="fab fa-linkedin social"></i></a>
                  </div>
             </div>
 
@@ -123,8 +123,8 @@
                 <div class="ekip-ikon">
                    <a href="#"><i class="fab fa-facebook social"></i></a>
                    <a href="#"><i class="fab fa-twitter social"></i></a>
-                   <a href="https://www.instagram.com/hsynacn/" target="_blank"><i class="fab fa-instagram social"></i></a>
-                   <a href="https://www.linkedin.com/in/h%C3%BCseyin-a%C3%A7an/" target="_blank"><i class="fab fa-linkedin social"></i></a>
+                   <a href="#" target="_blank"><i class="fab fa-instagram social"></i></a>
+                   <a href="#" target="_blank"><i class="fab fa-linkedin social"></i></a>
                 </div>
            </div>
 
@@ -137,7 +137,7 @@
                <a href="#" ><i class="fab fa-facebook social"></i></a>
                <a href="#"><i class="fab fa-twitter social"></i></a>
                <a href="#"><i class="fab fa-instagram social"></i></a>
-               <a href="https://www.linkedin.com/in/serkanakan/" target="_blank"><i class="fab fa-linkedin social"></i></a>
+               <a href="#" target="_blank"><i class="fab fa-linkedin social"></i></a>
             </div>
        </div>
 
