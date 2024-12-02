@@ -1,0 +1,462 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    height: 80px;
+    padding: 0 20px;
+}
+
+#logo {
+    float: left;
+    font-size: 30px;
+    line-height: 80px;
+    color: #003666;
+}
+
+nav {
+    float: right;
+    line-height: 80px;
+}
+
+nav a:link {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 25px;
+    color: #003666;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #003666;
+}
+
+.ikon {
+    margin-right: 7px;
+    font-size: 16px;
+}
+
+#anasayfa {
+    height: 600px;
+    background-image: url("../img/banner1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#siyah {
+    background-color: black;
+    opacity: 0.5;
+}
+
+#içerik {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px black; 
+    font-weight: bold; 
+    line-height: 1.5; 
+}
+
+#Hakkımızda {
+    background-color:  #f8f9fa;
+    padding: 50px ;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 55px;
+    color: #003666;
+    text-shadow: 0 1 1px #003666;
+    font-weight: 600;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+    padding:  auto;
+}
+
+#sol {
+    border-right: 3px solid #445c6e;
+    float: left;
+    width: 400px;
+    font-size: 30px;
+    color: #445c6e;
+}
+
+#h5sol{
+    line-height: 1.6;
+    font-size: 25px;
+    font-weight: 600px;
+}
+
+#h5sol,#sag {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 20px;
+}
+
+span {
+    font-size: 50px;
+    margin-right: 17px;
+    line-height: 42px;
+    color: #80a8ca;
+    font-weight: 600;
+    float: left;
+    letter-spacing: -100px;
+}
+
+#sag {
+    float: right;
+    width: 750px;
+    text-align: center;
+    color: #999999;
+    letter-spacing: 1px;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 100;
+}
+
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.mt100 {
+    margin-top: 100px;
+}
+
+#palt{
+    color: #999999;
+    letter-spacing: 1px;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 100;
+}
+
+#Egitimler {
+    background-color: #f8f9fa;
+    padding: 50px;
+    text-align: center;
+    height: 700px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.card {
+    width: 320px;
+    height: 350px;
+    border: 1px solid #ddd;
+    padding: 0;
+    display: inline-block;
+}
+
+.cardbaslik {
+    color: #003666;
+    font-size: 20px;
+}
+
+.cardp {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 100;
+}
+
+.card:hover {
+    border: 2px solid #003666;
+}
+
+#Ekip {
+    background-color: #003666;
+    padding: 50px;
+    text-align: center;
+    height: 850px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+#ekiph3 {
+    color: azure;
+}
+
+.sutun-sol-sag {
+    width: 385px;
+    padding: 50px;
+    float: left;
+}
+
+.oval {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.ekipisim {
+    color: azure;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.ekipp {
+    color:#555;
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 100;
+}
+
+.social {
+    padding: 10px;
+    color: azure;
+    border: 1px solid azure;
+    width: 50px;
+    border-radius: 12px;
+}
+
+.social:hover {
+    background-color: azure;
+    color: #003666;
+}
+
+.sutun{
+    width: 385px;
+    padding: 50px;
+    float: left;
+}
+
+#iletisim {
+    background: url("../img/iletisim.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    height: auto    ;
+    text-align: center;
+}
+
+#iletisimh3 {
+    color: #003666;
+    font-size: 55px;
+    text-shadow: 0 1 1px #003666;
+    font-weight: 600;
+}
+
+#iletisimopak {
+    background:
+    rgba(255, 255, 255, 0.2);
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    height: 550px;
+}
+
+#formgroup {
+    width: 700px;
+    float: left;
+    height: 500px;
+    text-align: left;
+}
+
+#solform {
+    width: 50%;
+    float: left;
+    padding-right: 4px;
+}
+#sagform {
+    width: 50%;
+    float: left;
+    padding-left: 4;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: azure;
+    margin: 10px ;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+
+}
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    background-color: #445c6e;
+    padding: 10px 30px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: azure;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#adres {
+    width: 450px;
+    float: right;
+    padding: 30px;
+    height: 500px;
+    text-align: left;
+}
+
+#adresbaslik {
+    color: #003666;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.adresp {
+    color: #292727;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 100;
+}
+
+#copyright {
+    padding: 20px;
+    text-align: center;
+    color: azure;
+    font-size: 20px;
+    line-height: 1.8;
+    letter-spacing: 2px;
+}
+
+#up {
+    background-color: #003666;
+    color: azure;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Eğitimin carousel yapı stili */
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.owl-carousel .card {
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover durumu kart */
+.owl-carousel .card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Ekip sosyal medya ikon hover */
+.ekip-ikon a:hover {
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+}
+
+/* Yukarı kaydırma butonu hover */
+#yukarı:hover {
+    background-color: #445c6e;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* İletişim formu hover */
+input[type="submit"]:hover {
+    background-color: #003666;
+    border: 2px solid #445c6e;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Responsive ayar */
+@media (max-width: 768px) {
+    .sutun, .sutun-sol-sag {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #sol, #sag {
+        float: none;
+        width: 100%;
+        text-align: center;
+        border: none;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+/* Form Konteyneri */
+.form-container {
+    width: 50%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Başlık */
+.form-container h2 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+/* Etiketler */
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Giriş Alanları */
+.form-container input[type="text"],
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Buton */
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #45a049;
+}
