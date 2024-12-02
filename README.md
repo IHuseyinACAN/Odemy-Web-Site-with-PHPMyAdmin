@@ -1,9 +1,7 @@
 
 # 🎓 **Odemy**  
 **Kendi öğrenme platformunuzu yerel ortamınızda oluşturun! 🚀**  
-
-![Odemy Banner]((https://github.com/user-attachments/assets/efec112b-b8d3-4aab-9808-42e3d4efe203)
-)  
+ 
 
 ---
 
