@@ -74,7 +74,7 @@ CREATE TABLE IF NOT EXISTS iletisim (
 Tüm proje dosyalarını **htdocs** klasörüne taşıyın:  
 📁 `C:\xampp\htdocs\odemy`  
 
-> 🔥 **Artık her şey hazır!** Tarayıcınıza gidin ve [http://localhost/odemy_clone](http://localhost/odemy_clone) adresini ziyaret edin. 🎉  
+> 🔥 **Artık her şey hazır!** Tarayıcınıza gidin ve [http://localhost/odemy_clone](http://localhost/odemy) adresini ziyaret edin. 🎉  
 
 ---
 
