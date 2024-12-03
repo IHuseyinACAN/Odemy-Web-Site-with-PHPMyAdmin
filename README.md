@@ -33,7 +33,6 @@ CREATE TABLE IF NOT EXISTS iletisim (
     konu VARCHAR(100),
     mesaj TEXT
 );
-![2](https://github.com/user-attachments/assets/93f52f1b-69cf-4930-a636-992dd33f7186)
 ```  
 
 ## 🎨 **Ekran Görüntüleri**  
