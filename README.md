@@ -12,6 +12,11 @@ Projeyi indirip yerel sunucunuzda çalıştırarak:
 - 🔧 Özelleştirmeler yapabilir ve  
 - 💡 PHP & MySQL deneyiminizi geliştirebilirsiniz!  
 
+### ✨ **Yeni Eklenen Özellikler**
+- 🌓 **Gece/Gündüz Modu (Dark & Light Mode):** Havalı dönüşüm (morphing) animasyonlarına sahip, kullanıcının tercihini `localStorage` ile tarayıcıda saklayan gece/gündüz modu eklendi.
+- 📜 **Yumuşak Kaydırma (Smooth Scrolling):** Menü linkleri işlevsel hale getirilerek tek sayfa (single-page) geçişleri pürüzsüz kayma efektiyle modernize edildi.
+- 🚀 **Laragon Entegrasyonu:** Projeyi hem XAMPP hem de modern Laragon yerel sunucusu ile ayağa kaldırabileceğiniz rehberler eklendi.
+
 ---
 
 ## 🚀 **Kurulum Rehberi**  
@@ -71,17 +76,23 @@ CREATE TABLE IF NOT EXISTS iletisim (
 ---
 
 ### 4️⃣ **Proje Dosyalarını Kopyalayın**  
+
+#### **A) XAMPP Kullanıyorsanız:**
 Tüm proje dosyalarını **htdocs** klasörüne taşıyın:  
 📁 `C:\xampp\htdocs\odemy`  
+> Tarayıcınızdan [http://localhost/odemy](http://localhost/odemy) adresini ziyaret edin. 🎉  
 
-> 🔥 **Artık her şey hazır!** Tarayıcınıza gidin ve [http://localhost/odemy_clone](http://localhost/odemy) adresini ziyaret edin. 🎉  
+#### **B) Laragon Kullanıyorsanız (Önerilen):**
+Tüm proje dosyalarını Laragon'un **www** klasörüne taşıyın:  
+📁 `C:\laragon\www\odemy`  
+> Tarayıcınızdan [http://localhost/odemy](http://localhost/odemy) veya otomatik tanımlanan sanal host adresi olan [http://odemy.test](http://odemy.test) adresini ziyaret edin. 🎉  
 
 ---
 
 ## 🛠️ **Önemli Notlar**  
-- **PHPMyAdmin** kullanıyorsanız mevcut yapılandırma uyumludur.  
-- Farklı bir veritabanı sistemi kullanıyorsanız bağlantı ayarlarını özelleştirmeyi unutmayın.  
-- Proje dosyalarının tamamını **htdocs** klasörüne taşımayı ihmal etmeyin!  
+- **PHPMyAdmin / Laragon MySQL:** Mevcut yapılandırma (`baglanti.php` içindeki varsayılan root ve şifresiz ayarlar) hem XAMPP hem de Laragon MySQL ile tam uyumludur.
+- Farklı bir veritabanı sistemi veya şifresi kullanıyorsanız `baglanti.php` bağlantı ayarlarını özelleştirmeyi unutmayın.
+- Proje dosyalarının tamamını ilgili sunucu klasörüne taşımayı ihmal etmeyin!  
 
 ---
 

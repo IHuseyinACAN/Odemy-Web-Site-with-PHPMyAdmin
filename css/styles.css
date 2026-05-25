@@ -1,3 +1,50 @@
+:root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --bg-menu: #ffffff;
+    --bg-ekip: #003666;
+    --text-primary: #333333;
+    --text-secondary: #555555;
+    --text-title: #003666;
+    --text-ekip: azure;
+    --card-bg: #ffffff;
+    --card-border: #dddddd;
+    --form-bg: azure;
+    --form-text: #495057;
+    --form-border: #ced4da;
+    --logo-color: #003666;
+    --nav-link: #003666;
+    --nav-hover: #003666;
+    --iletisim-opak: rgba(255, 255, 255, 0.2);
+    --adres-text: #292727;
+    --transition-speed: 0.4s;
+}
+
+body.dark-mode {
+    --bg-primary: #121212;
+    --bg-secondary: #1e1e1e;
+    --bg-menu: #181818;
+    --bg-ekip: #0a1128;
+    --text-primary: #e0e0e0;
+    --text-secondary: #b0b0b0;
+    --text-title: #8ab4f8;
+    --text-ekip: #e0e0e0;
+    --card-bg: #1f1f1f;
+    --card-border: #333333;
+    --form-bg: #2d2d2d;
+    --form-text: #ffffff;
+    --form-border: #444444;
+    --logo-color: #8ab4f8;
+    --nav-link: #e0e0e0;
+    --nav-hover: #8ab4f8;
+    --iletisim-opak: rgba(0, 0, 0, 0.6);
+    --adres-text: #b0b0b0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -6,34 +53,111 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
+}
+
+section, div, h3, h4, h5, p, span, a, input, textarea, button, .card {
+    transition: background-color var(--transition-speed) ease, 
+                color var(--transition-speed) ease, 
+                border-color var(--transition-speed) ease, 
+                box-shadow var(--transition-speed) ease,
+                transform 0.3s ease;
 }
 
 #menu {
     height: 80px;
     padding: 0 20px;
+    background-color: var(--bg-menu);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 #logo {
     float: left;
     font-size: 30px;
     line-height: 80px;
-    color: #003666;
+    color: var(--logo-color);
+    font-weight: bold;
 }
 
 nav {
     float: right;
     line-height: 80px;
+    display: flex;
+    align-items: center;
 }
 
-nav a:link {
-    color: #fff;
+nav a:link, nav a:visited {
     text-decoration: none;
     margin-right: 25px;
-    color: #003666;
+    color: var(--nav-link);
+    font-weight: 500;
 }
 
 nav a:hover {
-    border-bottom: 2px solid #003666;
+    border-bottom: 2px solid var(--nav-hover);
+    color: var(--nav-hover);
+}
+
+/* Tema Değiştirme Butonu */
+.theme-btn {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+    padding: 0;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    overflow: hidden;
+}
+
+.theme-btn:hover {
+    background-color: rgba(0, 54, 102, 0.1);
+    transform: scale(1.05);
+}
+
+body.dark-mode .theme-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.theme-icon {
+    position: absolute;
+    font-size: 20px;
+    color: var(--nav-link);
+    transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease;
+}
+
+/* Aydınlık mod durumları */
+.theme-btn .sun-icon {
+    opacity: 0;
+    transform: translateY(20px) rotate(90deg);
+}
+
+.theme-btn .moon-icon {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+}
+
+/* Karanlık mod durumları */
+body.dark-mode .theme-btn .sun-icon {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+}
+
+body.dark-mode .theme-btn .moon-icon {
+    opacity: 0;
+    transform: translateY(-20px) rotate(-90deg);
 }
 
 .ikon {
@@ -67,7 +191,7 @@ nav a:hover {
 }
 
 #Hakkımızda {
-    background-color:  #f8f9fa;
+    background-color:  var(--bg-secondary);
     padding: 50px ;
     text-align: center;
     text-transform: capitalize;
@@ -76,8 +200,8 @@ nav a:hover {
 
 h3 {
     font-size: 55px;
-    color: #003666;
-    text-shadow: 0 1 1px #003666;
+    color: var(--text-title);
+    text-shadow: 0 1 1px var(--text-title);
     font-weight: 600;
 }
 
@@ -88,11 +212,11 @@ h3 {
 }
 
 #sol {
-    border-right: 3px solid #445c6e;
+    border-right: 3px solid var(--text-title);
     float: left;
     width: 400px;
     font-size: 30px;
-    color: #445c6e;
+    color: var(--text-title);
 }
 
 #h5sol{
@@ -121,7 +245,7 @@ span {
     float: right;
     width: 750px;
     text-align: center;
-    color: #999999;
+    color: var(--text-secondary);
     letter-spacing: 1px;
     font-size: 15px;
     line-height: 1.8;
@@ -139,7 +263,7 @@ span {
 }
 
 #palt{
-    color: #999999;
+    color: var(--text-secondary);
     letter-spacing: 1px;
     font-size: 15px;
     line-height: 1.8;
@@ -147,7 +271,7 @@ span {
 }
 
 #Egitimler {
-    background-color: #f8f9fa;
+    background-color: var(--bg-secondary);
     padding: 50px;
     text-align: center;
     height: 700px;
@@ -158,29 +282,30 @@ span {
 .card {
     width: 320px;
     height: 350px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--card-border);
+    background-color: var(--card-bg);
     padding: 0;
     display: inline-block;
 }
 
 .cardbaslik {
-    color: #003666;
+    color: var(--text-title);
     font-size: 20px;
 }
 
 .cardp {
-    color: #555;
+    color: var(--text-secondary);
     font-size: 15px;
     line-height: 1.8;
     font-weight: 100;
 }
 
 .card:hover {
-    border: 2px solid #003666;
+    border: 2px solid var(--text-title);
 }
 
 #Ekip {
-    background-color: #003666;
+    background-color: var(--bg-ekip);
     padding: 50px;
     text-align: center;
     height: 850px;
@@ -189,7 +314,7 @@ span {
 }
 
 #ekiph3 {
-    color: azure;
+    color: var(--text-ekip);
 }
 
 .sutun-sol-sag {
@@ -206,14 +331,14 @@ span {
 }
 
 .ekipisim {
-    color: azure;
+    color: var(--text-ekip);
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 12px;
 }
 
 .ekipp {
-    color:#555;
+    color: var(--text-secondary);
     font-size: 18px;
     line-height: 1.8;
     font-weight: 100;
@@ -221,15 +346,15 @@ span {
 
 .social {
     padding: 10px;
-    color: azure;
-    border: 1px solid azure;
+    color: var(--text-ekip);
+    border: 1px solid var(--text-ekip);
     width: 50px;
     border-radius: 12px;
 }
 
 .social:hover {
-    background-color: azure;
-    color: #003666;
+    background-color: var(--text-ekip);
+    color: var(--bg-ekip);
 }
 
 .sutun{
@@ -248,19 +373,19 @@ span {
 }
 
 #iletisimh3 {
-    color: #003666;
+    color: var(--text-title);
     font-size: 55px;
-    text-shadow: 0 1 1px #003666;
+    text-shadow: 0 1 1px var(--text-title);
     font-weight: 600;
 }
 
 #iletisimopak {
-    background:
-    rgba(255, 255, 255, 0.2);
+    background: var(--iletisim-opak);
     padding: 30px 20px;
     border-radius: 10px;
     margin-bottom: 50px;
     height: 550px;
+    border: 1px solid var(--card-border);
 }
 
 #formgroup {
@@ -286,12 +411,11 @@ span {
     padding: 10px;
     font-size: 15px;
     line-height: 1.5;
-    color: #495057;
-    background-color: azure;
+    color: var(--form-text);
+    background-color: var(--form-bg);
     margin: 10px ;
     border-radius: 5px;
-    border: 1px solid #ced4da;
-
+    border: 1px solid var(--form-border);
 }
 
 textarea {
@@ -320,13 +444,13 @@ input[type="submit"] {
 }
 
 #adresbaslik {
-    color: #003666;
+    color: var(--text-title);
     font-size: 25px;
     font-weight: 600;
 }
 
 .adresp {
-    color: #292727;
+    color: var(--adres-text);
     font-size: 15px;
     line-height: 1.8;
     font-weight: 100;
@@ -361,9 +485,10 @@ input[type="submit"] {
 
 .owl-carousel .card {
     margin: 10px;
-    background-color: #fff;
+    background-color: var(--card-bg);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--card-border);
 }
 
 /* Hover durumu kart */

@@ -14,10 +14,7 @@
         <title>
             Anasayfa
         </title>
-        <link
-            rel="stylesheet"
-            href="style.css">
-            <script src="https://kit.fontawesome.com/57f14e84f0.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/57f14e84f0.js" crossorigin="anonymous"></script>
     
     </head>
 
@@ -25,13 +22,17 @@
 
     <section id="menu"> 
         <div id="logo">ODEMY</div>
-        <nav>
-           <a href="index.html"><i class="fa-solid fa-house ikon"></i>Anasayfa</a>
-            <a href="hakkimizda.html"><i class="fa-solid fa-info ikon"></i>Hakkımızda</a>
-            <a href="iletisim.html"><i class="fa-solid fa-school ikon"></i>Eğitimler</a>
-            <a href="iletisim.html"><i class="fa-solid fa-user-group ikon"></i>Ekip</a>
-            <a href="iletisim.html"><i class="fa-solid fa-tty ikon"></i>İletişim</a>
-        </nav>
+         <nav>
+             <a href="#anasayfa"><i class="fa-solid fa-house ikon"></i>Anasayfa</a>
+             <a href="#Hakkımızda"><i class="fa-solid fa-info ikon"></i>Hakkımızda</a>
+             <a href="#Egitimler"><i class="fa-solid fa-school ikon"></i>Eğitimler</a>
+             <a href="#Ekip"><i class="fa-solid fa-user-group ikon"></i>Ekip</a>
+             <a href="#iletisim"><i class="fa-solid fa-tty ikon"></i>İletişim</a>
+             <button id="theme-toggle" class="theme-btn" aria-label="Tema Değiştir">
+                 <i class="fa-solid fa-moon theme-icon moon-icon"></i>
+                 <i class="fa-solid fa-sun theme-icon sun-icon"></i>
+             </button>
+         </nav>
     </section>
 
     <section id="anasayfa">
@@ -195,6 +196,25 @@
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
     <script src="owl/owl.carousel.min.js"></script>
     <script src="owl/script.js"></script>
+    
+    <script>
+        // Dark Mode Mantığı
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        
+        // Kayıtlı temayı kontrol et
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            // Tema değiştirme
+            document.body.classList.toggle('dark-mode');
+            
+            const isDark = document.body.classList.contains('dark-mode');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        });
+    </script>
 
    </body> 
 </html>
